@@ -1,0 +1,1 @@
+export type custom_decorators = (target: Record<string, any>, propertyKey: string | symbol) => void;

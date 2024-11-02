@@ -1,0 +1,10 @@
+{
+  "name": "unit",
+  "uuid": "2e8fe666-7026-4f3b-a360-372251921edf",
+  "creator": {
+    "version": "3.8.2"
+  },
+  "devDependencies": {
+    "kernel": "file:../../dist/kernel-0.0.0-development.tgz"
+  }
+}

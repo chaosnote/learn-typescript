@@ -1,0 +1,17 @@
+{
+    "name": "kernel",
+    "version": "0.0.0-development",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "scripts": {
+        "prestart": "node ./command/prestart.js",
+        "start": "node ./command/start.js",
+        "clear" : "node ./command/clear.js",
+        "unit-ccs": "npm run start & node ./command/unit-ccs.js",
+        "test" : "node ./command/prestart.js"
+    },
+    "dependencies": {
+    }
+}
+       
