@@ -10,11 +10,4 @@ npm i -g uglifyjs-folder@3.3.0
 
 ## npm 指命
 
-del kernel-0.0.0-development.tgz&&npm run build
-
-## packages
-
-``` json
-"prestart": "npm uninstall kernel",
-"start": "npm i ../kernel/dist/kernel-0.0.0-development.tgz"
-```
+del kernel-0.0.0-development.tgz
