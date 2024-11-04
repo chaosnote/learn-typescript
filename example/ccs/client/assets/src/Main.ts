@@ -41,13 +41,12 @@ export class Main extends Component {
     private test_web_socket(): void {
         const msg = "test_web_socket";
 
-        const game_id = "1019";
         const addr = `http://localhost:8080/ws`;
 
         this._ws.open.on(() => {
             this._logger.debug(msg, "open");
-            this._ws.send("test[0]".toUint8Array());
-            this._ws.send("test[1]");
+            // this._ws.send("test[0]".toUint8Array()); // binary
+            this._ws.send("test[1]"); //test
         });
         this._ws.close.on((reson: string) => this._logger.debug(msg, reson));
         this._ws.error.on(() => this._logger.error(msg, "error"));
