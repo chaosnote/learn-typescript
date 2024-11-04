@@ -50,7 +50,7 @@ export class Main extends Component {
             this._ws.send("test[1]");
         });
         this._ws.close.on((reson: string) => this._logger.debug(msg, reson));
-        this._ws.error.on(() => this._logger.debug(msg, "error"));
+        this._ws.error.on(() => this._logger.error(msg, "error"));
 
         this._ws.message_binary.on((pack: Uint8Array) => {
             // pack 拆解

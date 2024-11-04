@@ -5,6 +5,6 @@
     "version": "3.8.2"
   },
   "devDependencies": {
-    "kernel": "file:../../dist/kernel-0.0.0-development.tgz"
+    "kernel": "file:../../../dist/kernel-0.0.0-development.tgz"
   }
 }
