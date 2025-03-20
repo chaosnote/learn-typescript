@@ -11,7 +11,3 @@ npm i -g uglifyjs-folder@3.3.0
 ## npm 指命
 
 del kernel-0.0.0-development.tgz
-
-## Todo
-
-1. NodeJS 代碼
