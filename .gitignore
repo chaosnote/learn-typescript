@@ -1,5 +1,5 @@
 dist/
 temp/
 node_modules/
-
+example/ccs/server/node_modules/
 utils-0.0.0-development.tgz
