@@ -1,5 +1,7 @@
 # Typescript 常用功能
 
+1. web socket
+
 ## 預先安裝
 
 ``` text
