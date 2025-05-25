@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "protobufjs": "^7.2.6",
+    "ts-protoc-gen": "^0.15.0"
+  },
+  "devDependencies": {
+    "protobufjs-cli": "^1.1.3"
+  },
+  "scripts": {
+    "build-proto:pbjs": "pbjs --dependency protobufjs/minimal.js --target static-module --wrap commonjs -p ./source --out ./dist/game_pb.js ./source/common/user.proto ./source/slot/slot.proto ./source/game_%npm_config_gameid%/game.proto",
+    "build-proto:pbts": "pbts --main --out ./dist/game_%npm_config_gameid%/game_pb.d.ts ./dist/game_%npm_config_gameid%/*.js",
+    "echo": "echo \"${npm_config_gameid}\"",
+    "generate-pbjs": "node runPbjs.js",
+    "generate-pbts": "node runPbts.js"
+  }
+}
