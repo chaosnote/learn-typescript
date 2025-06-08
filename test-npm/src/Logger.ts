@@ -10,15 +10,23 @@ const danger_style = "background:#dc3545;color:#fff;font-size:14px;" ;
  */
 class simple_logger {
     constructor(private class_name: string) { }
-
     debug(func_name: string, ...args: any[]): void {
-        console.log(`%c===== [D]${this.class_name}.${func_name} =====\n%o`, success_style, args);
+        console.log(`%c===== [D]${this.class_name}.${func_name} =====\n`, success_style);
+        for (const key in args) {
+            console.log(args[key]) ;
+        }
     }
     warn(func_name: string, ...args: any[]): void {
-        console.log(`%c===== [W]${this.class_name}.${func_name} =====\n%o`, warn_style, args);
+        console.log(`%c===== [W]${this.class_name}.${func_name} =====\n`, warn_style);
+        for (const key in args) {
+            console.log(args[key]) ;
+        }
     }
     error(func_name: string, ...args: any[]): void {
-        console.log(`%c===== [E]${this.class_name}.${func_name} =====\n%o`, danger_style, args);
+        console.log(`%c===== [E]${this.class_name}.${func_name} =====\n`, danger_style);
+        for (const key in args) {
+            console.log(args[key]) ;
+        }
     }
 }
 /**
