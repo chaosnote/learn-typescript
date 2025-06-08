@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "action.proto";
+
+option go_package = ".;protobuf";
+
+message Player{
+    string name = 1;
+    double wallet = 2 ;
+}
+
+message Init{
+    Player player = 1 ;
+}

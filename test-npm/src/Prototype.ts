@@ -1,4 +1,4 @@
-export {}
+export { }
 
 declare global {
     interface Uint8Array {
@@ -34,12 +34,11 @@ String.prototype.padStart = function padStart(max_len: number, pad_string: strin
     pad_string = String((typeof pad_string !== 'undefined' ? pad_string : ' '));
     if (this.length >= max_len) {
         return String(this);
-    } else {
-        max_len = max_len - this.length;
-        if (max_len > pad_string.length) {
-            pad_string += pad_string.repeat(max_len / pad_string.length); // 補字串
-        }
-        return pad_string.slice(0, max_len) + String(this);
     }
+    max_len = max_len - this.length;
+    if (max_len > pad_string.length) {
+        pad_string += pad_string.repeat(max_len / pad_string.length); // 補字串
+    }
+    return pad_string.slice(0, max_len) + String(this);
 };
 
