@@ -4,7 +4,7 @@ import "action.proto";
 
 option go_package = ".;protobuf";
 
-enum ActionType {
+enum Action {
     INIT = 0 ; 
     BET = 1;
     COMPLETE = 2 ;
